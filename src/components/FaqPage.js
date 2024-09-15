@@ -6,7 +6,7 @@ const FaqPage = () => {
   const [newQuestion, setNewQuestion] = useState('');
   const [newAnswer, setNewAnswer] = useState('');
 
-  // Fetch FAQs from the backend
+ 
   useEffect(() => {
     const fetchFaqs = async () => {
       try {
@@ -15,7 +15,7 @@ const FaqPage = () => {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        console.log('Fetched FAQs:', data); // Log data
+        console.log('Fetched FAQs:', data); 
         setFaqs(data);
       } catch (error) {
         console.error('Error fetching FAQs:', error);
@@ -25,7 +25,7 @@ const FaqPage = () => {
     fetchFaqs();
   }, []);
   
-  console.log('FAQs State:', faqs); // Log state
+  console.log('FAQs State:', faqs); 
   
 
 
@@ -58,7 +58,7 @@ const FaqPage = () => {
     }
   };
 
-  // Delete an FAQ
+  // Delete
   const deleteFaq = async (id) => {
     try {
       const response = await fetch(`http://localhost:5000/faqs/${id}`, {
@@ -75,7 +75,7 @@ const FaqPage = () => {
     }
   };
 
-  // Update an FAQ
+  // Update
   const updateFaq = async (id) => {
     if (!newQuestion || !newAnswer) {
       alert('Please enter both question and answer');
