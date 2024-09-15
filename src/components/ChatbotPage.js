@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 
-// Connect to your backend server
-const socket = io('http://localhost:4000'); // Change this URL based on where your server is running
+// backend connection
+const socket = io('http://localhost:4000'); 
 
 const RealTimeChat = () => {
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    // Listen for messages from the server
+    
     socket.on('receiveMessage', (newMessage) => {
       setMessages((prevMessages) => [...prevMessages, newMessage]);
     });
 
-    // Clean up the listener when the component unmounts
+   
     return () => {
       socket.off('receiveMessage');
     };
@@ -23,10 +23,10 @@ const RealTimeChat = () => {
   const handleSendMessage = () => {
     if (message.trim() === '') return;
 
-    // Emit the message to the server (do not add it locally, let the server handle broadcasting)
+   
     socket.emit('sendMessage', message);
 
-    // Clear the input field after sending
+   
     setMessage('');
   };
 
