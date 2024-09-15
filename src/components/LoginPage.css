@@ -118,16 +118,16 @@
     display: flex;
     justify-content: space-between;
     font-size: 12px;
-    align-items: center; /* Aligns items vertically in the center */
+    align-items: center; 
   }
   
   .options .remember-password {
     display: flex;
-    align-items: center; /* Ensures checkbox and label are aligned */
+    align-items: center; 
   }
   
   .options input[type="checkbox"] {
-    margin-right: 5px; /* Adds some space between checkbox and label */
+    margin-right: 5px; 
   }
   
   .options a {
