@@ -1,0 +1,52 @@
+/* Overall Translator page styling */
+.translator-page {
+    padding: 20px;
+    background: linear-gradient(90deg, #E0BCF3 0%, #7EE7EE 100%);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title styling */
+  .translator-page h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  /* Input field styling */
+  .input-text {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Language select styling */
+  .language-select {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  /* Button styling */
+  .translate-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .translate-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+    text-align: center;
+  }
+  

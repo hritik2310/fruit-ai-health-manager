@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.home-container {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #E0BCF3 0%, #7EE7EE 100%);
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 120px); /* Two columns of 120px each */
+  gap: 20px;
+}
+
+.service-card {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #4d148c;
+  border-radius: 20px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.service-card.chat {
+  background-color: #ffd79b; /* Light orange */
+}
+.service-card.plane1{background-color: #C2FFD0;}
+.service-card.plane2{background: #EFFFC2;}
+.service-card.translator {
+  background-color: #caf0f8; /* Light blue */
+}
+
+.service-card.faqs {
+  background-color: #f1c0e8; /* Light purple */
+}
+
+.service-card.about {
+  background-color: #e9ffdf; /* Light green */
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.pagination {
+  margin-top: 30px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: #717171;
+}

@@ -1,0 +1,177 @@
+/* Overall FAQ page styling */
+.faq-page {
+  padding: 20px;
+  background: linear-gradient(90deg, #E0BCF3 0%, #7EE7EE 100%);
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title styling */
+.faq-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* FAQ list container */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+/* Individual FAQ card styling */
+.faq-card {
+  display: flex;
+  flex-direction: column; /* Stack question and answer vertically */
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-5px);
+}
+
+/* FAQ content styling */
+.faq-content h3 {
+  font-size: 1.2rem;
+  color: #d79ea0;
+  margin-bottom: 10px;
+}
+
+.faq-content h6 {
+  color: #d5a7ff; /* Update answer color to make it visible */
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.faq-content p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Button styling */
+.delete-btn,
+.edit-btn {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.edit-btn {
+  background-color: #4caf50;
+}
+
+.delete-btn:hover {
+  background-color: #ff3030;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Add FAQ section styling */
+.add-faq-section {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 500px; /* Limit the max width for better alignment */
+  display: flex; /* Add flex display */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 10px; /* Space between items */
+}
+
+/* Style for input fields and button */
+.add-faq-section input,
+.add-btn {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Full width within container */
+  max-width: 300px; /* Adjust max-width as needed */
+}
+
+.add-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 1.5rem;
+  }
+
+  .faq-card {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .faq-content h3 {
+    font-size: 1rem;
+  }
+
+  .faq-content h6 {
+    font-size: 0.9rem;
+  }
+
+  .add-faq-section {
+    max-width: 90%; /* Increase max-width for smaller screens */
+  }
+
+  .add-faq-section input,
+  .add-btn {
+    width: 100%; /* Full width for smaller screens */
+    max-width: none; /* Remove max-width */
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-title {
+    font-size: 1.2rem;
+  }
+
+  .faq-card {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .faq-content h3 {
+    font-size: 0.9rem;
+  }
+
+  .faq-content h6 {
+    font-size: 0.8rem;
+  }
+
+  .add-faq-section input,
+  .add-btn {
+    width: 100%;
+  }
+}
