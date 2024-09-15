@@ -1,4 +1,4 @@
-/* Style for the entire page */
+
 .about-page {
     display: flex;
     justify-content: center;
@@ -7,7 +7,7 @@
     background: linear-gradient(90deg, #E0BCF3 0%, #7EE7EE 100%);
   }
   
-  /* Style for the card container */
+
   .card {
     background: white;
     border-radius: 30px;
@@ -22,13 +22,13 @@
     align-items: center;
   }
   
-  /* Heading style */
+  
   .card h1 {
     font-size: 1.8rem;
     margin-bottom: 20px;
   }
   
-  /* Paragraph style */
+
   .card p {
     font-size: 1rem;
     color: #666;
@@ -36,7 +36,7 @@
     line-height: 1.5;
   }
   
-  /* Button style */
+ 
   .card button {
     padding: 12px 20px;
     background: black;
