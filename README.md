@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+#Fruit.ai - Health Manager Product
+Fruit.ai is a mobile-friendly health management application that provides the following functionalities:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Chatbot with fruit details
+->Translator for regional language
+->FAQ section with CRUD operations
+->About page
+->User authentication through a dummy login system
 
-## Available Scripts
+##Features
+->Login Page: Simple user interface with dummy login credentials.
+->Home Page: Links to various services like Chatbot, Translator, FAQ, and About page.
+->Chatbot Page: Displays a list of fruits and their detailed information.
+->Translator Page: A form that translates text input into a regional language.
+->FAQ Page: Allows users to create, read, update, and delete FAQs about fruits.
+->About Page: Provides information about the Fruit.ai app.
 
-In the project directory, you can run:
 
-### `npm start`
+##Table of Contents
+->Installation
+->Available Scripts
+->API Endpoints
+->FAQ CRUD
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##Technologies Used
+->Design and UX
+->Deployment
+->Installation
 
-### `npm test`
+##Clone the repository:
+bash
+Copy code
+git clone https://github.com/your-username/Fruit.ai.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+##Navigate to the project directory:
+bash
+Copy code
+cd Fruit.ai
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##Install dependencies:
+bash
+Copy code
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##In the project directory, you can run:
+npm start
+Runs the app in the development mode. Open http://localhost:3000 to view it in your browser.
 
-### `npm run eject`
+npm run build
+Builds the app for production in the build folder.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+##API Endpoints
+GET	/api/faqs	
+Retrieves all FAQs
+POST	/api/faqs	
+Adds a new FAQ
+PUT	/api/faqs/
+Updates a specific FAQ
+DELETE	/api/faqs/
+Deletes a specific FAQ
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+##FAQ CRUD
+->Create: You can add a new FAQ entry by filling out the form on the FAQ page.
+->Read: FAQs are displayed in a list, and clicking on an item shows its details.
+->Update: An existing FAQ can be edited by clicking the "Edit" button next to it.
+->Delete: You can remove an FAQ using the "Delete" button.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+##Technologies Used
+Frontend:
+React.js
+HTML5 & CSS3
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Backend:
+Node.js with Express
 
 ### Deployment
+#Frontend
+This section has moved here: https://fruit-ai-health-manager1.netlify.app
+#Backend
+https://fruit-ai-health-manager-1.onrender.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
