@@ -5,9 +5,9 @@ import './TranslatorPage.css';
 const TranslatorPage = () => {
   const [inputText, setInputText] = useState('');
   const [translatedText, setTranslatedText] = useState('');
-  const [targetLanguage, setTargetLanguage] = useState('es'); // Default to Spanish
+  const [targetLanguage, setTargetLanguage] = useState('es'); 
   const [error, setError] = useState('');
-  const API_KEY = '9UZe0g7W3cYZqKVnuQgwIOopFe8YgXeC'; // Your IBM Watson API Key
+  const API_KEY = '9UZe0g7W3cYZqKVnuQgwIOopFe8YgXeC'; 
 
   const handleTranslate = async () => {
     if (!inputText) {
@@ -64,7 +64,7 @@ const TranslatorPage = () => {
           <option value="zh">Chinese</option>
           <option value="ar">Arabic</option>
           <option value="hi">Hindi</option>
-          {/* Add more language options as needed */}
+          {}
         </select>
       </div>
       <button onClick={handleTranslate} className="translate-button">Translate</button>
