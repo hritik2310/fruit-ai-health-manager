@@ -1,4 +1,4 @@
-/* Overall FAQ page styling */
+
 .faq-page {
   padding: 20px;
   background: linear-gradient(90deg, #E0BCF3 0%, #7EE7EE 100%);
@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-/* Title styling */
+
 .faq-title {
   font-size: 2rem;
   text-align: center;
@@ -17,7 +17,7 @@
   margin-bottom: 20px;
 }
 
-/* FAQ list container */
+
 .faq-list {
   display: flex;
   flex-direction: column;
@@ -26,10 +26,10 @@
   width: 100%;
 }
 
-/* Individual FAQ card styling */
+
 .faq-card {
   display: flex;
-  flex-direction: column; /* Stack question and answer vertically */
+  flex-direction: column; 
   background: white;
   border-radius: 20px;
   padding: 20px;
@@ -43,7 +43,7 @@
   transform: translateY(-5px);
 }
 
-/* FAQ content styling */
+
 .faq-content h3 {
   font-size: 1.2rem;
   color: #d79ea0;
@@ -51,7 +51,7 @@
 }
 
 .faq-content h6 {
-  color: #d5a7ff; /* Update answer color to make it visible */
+  color: #d5a7ff; 
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -62,7 +62,7 @@
   line-height: 1.5;
 }
 
-/* Button styling */
+
 .delete-btn,
 .edit-btn {
   background-color: #ff5c5c;
@@ -87,25 +87,25 @@
   background-color: #45a049;
 }
 
-/* Add FAQ section styling */
+
 .add-faq-section {
   margin-top: 40px;
   width: 100%;
-  max-width: 500px; /* Limit the max width for better alignment */
-  display: flex; /* Add flex display */
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  gap: 10px; /* Space between items */
+  max-width: 500px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 10px; 
 }
 
-/* Style for input fields and button */
+
 .add-faq-section input,
 .add-btn {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 100%; /* Full width within container */
-  max-width: 300px; /* Adjust max-width as needed */
+  width: 100%; 
+  max-width: 300px; 
 }
 
 .add-btn {
@@ -122,7 +122,7 @@
   background-color: #0056b3;
 }
 
-/* Responsive design for mobile */
+
 @media (max-width: 768px) {
   .faq-title {
     font-size: 1.5rem;
@@ -142,13 +142,13 @@
   }
 
   .add-faq-section {
-    max-width: 90%; /* Increase max-width for smaller screens */
+    max-width: 90%; 
   }
 
   .add-faq-section input,
   .add-btn {
-    width: 100%; /* Full width for smaller screens */
-    max-width: none; /* Remove max-width */
+    width: 100%; 
+    max-width: none; 
   }
 }
 
